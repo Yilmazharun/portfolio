@@ -63,14 +63,15 @@ body {
   border-radius: 20px;
   padding: 40px;
   margin-bottom: 30px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--border-color);
   animation: fadeInUp 0.8s ease-out;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .section-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 .header-card {
