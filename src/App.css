@@ -5,19 +5,22 @@
 }
 
 :root {
-  --primary-color: #2c2c2c;
-  --secondary-color: #8b7355;
-  --accent-color: #a0826d;
-  --text-dark: #2c2c2c;
-  --text-light: #6b6b6b;
-  --bg-light: #f5f5f0;
-  --border-color: #e8e4df;
+  --primary-color: #000000;
+  --secondary-color: #2d2d2d;
+  --accent-color: #666666;
+  --text-dark: #000000;
+  --text-light: #666666;
+  --bg-light: #fafafa;
+  --border-color: #e5e5e5;
 }
 
 body {
-  background: linear-gradient(135deg, #f5f5f0 0%, #ffffff 100%);
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background: #ffffff;
+  min-height: 100vh;
 }
-
 .App {
   min-height: 100vh;
 }
@@ -104,11 +107,9 @@ body {
 .header-title {
   font-size: 3rem;
   font-weight: 800;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary-color);
   margin-bottom: 10px;
+  letter-spacing: -1px;
 }
 
 .header-subtitle {
@@ -293,18 +294,20 @@ body {
   align-items: center;
   gap: 8px;
   padding: 10px 20px;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: var(--primary-color);
   color: white;
   text-decoration: none;
   border-radius: 25px;
   font-weight: 600;
   transition: all 0.3s ease;
+  border: 2px solid var(--primary-color);
 }
 
 .project-link:hover {
+  background: white;
+  color: var(--primary-color);
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
-  color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .metrics-grid {
@@ -372,21 +375,22 @@ body {
   gap: 10px;
 }
 
-.skill-tag {
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  color: white;
+..skill-tag {
+  background: var(--bg-light);
+  color: var(--primary-color);
   padding: 10px 18px;
   border-radius: 25px;
   font-size: 0.9rem;
   font-weight: 600;
   transition: all 0.3s ease;
-  border: 2px solid transparent;
+  border: 2px solid var(--border-color);
 }
 
 .skill-tag:hover {
-  transform: scale(1.1);
-  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
-  animation: pulse 0.6s ease-in-out;
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+  transform: scale(1.05);
 }
 
 /* Certifications */
