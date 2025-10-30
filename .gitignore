@@ -1,0 +1,45 @@
+cd my-portfolio
+```
+
+(Or `cd portfolio` - whatever you named your project)
+
+---
+
+## 📌 STEP 6: Create .gitignore File
+
+1. In VS Code, **right-click** on your project root folder (my-portfolio)
+2. Select **New File**
+3. Name it: `.gitignore` (with the dot!)
+4. Copy and paste this content:
+```
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Production
+/build
+
+# Misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
